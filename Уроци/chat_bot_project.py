@@ -1,7 +1,7 @@
 from collections import Counter
 
 issue = input("Please specify your issue by choosing - 1-hardware or 2-software or EXIT to quit: ").lower()
-name = input("What is your name: ")
+
 is_salable = False
 
 changeable = []
@@ -19,7 +19,7 @@ while issue != "EXIT".lower():
                   " 3-SSD;"
                   " 4-CPU;"
                   " 5-VideoCard")
-            hardware_issue_choice = input(f"Your choice of hardware {name}: ")
+            hardware_issue_choice = input(f"Your choice of hardware: ")
             if hardware_issue_choice == "1":
                 replaceable = input("Choose 1-BUY or 2-CHANGE: ")
                 module = "MotherBoard"
@@ -73,7 +73,7 @@ while issue != "EXIT".lower():
                   " 2-Malware Attack;"
                   " 3-Windows Displaying Blue Screen;"
                   " 4-Outdated system")
-            software_issue_choice = input(f"Your choice of software {name}: ")
+            software_issue_choice = input(f"Your choice of software: ")
             if software_issue_choice == "1":
                 module = "Drivers"
                 count_salable += 1
@@ -99,8 +99,7 @@ while issue != "EXIT".lower():
     issue = input("Please specify your issue by choosing - 1-hardware or 2-software or EXIT to quit: ").lower()
 
 if not issue == "EXIT".lower():
-    print(f"Good bye, {name}")
-
+    print(f"Good bye!")
 else:
     print(f"Purchasable items: {count_salable}")
     print(f"Changeable items: {count_changeable}")
