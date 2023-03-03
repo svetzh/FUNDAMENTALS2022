@@ -13,7 +13,6 @@
 
 
 numbers = [int(x) for x in input().split()]
-even_nums_only = lambda number: number % 2 == 0
-
-result = list(filter(even_nums_only, numbers))  # --> filter "even_nums_only" from numbers
+result = list(filter(lambda x: x % 2 == 0, numbers))  # --> filter "even_nums_only" from numbers
 print(result)
+

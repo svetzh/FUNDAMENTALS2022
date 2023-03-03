@@ -1,8 +1,5 @@
 # import os
-# os.remove("12_factorial_division.py")
-
-
-# this way I can remove files directly from the current folder
+# os.remove("12_factorial_division.py")  # -- > this way I can remove files directly from the current folder
 
 # numbers = input().split()
 # numbers_list = [float(x) for x in numbers]
