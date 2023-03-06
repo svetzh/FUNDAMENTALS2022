@@ -98,7 +98,6 @@ class Zoo:
         self.fishes = []
         self.birds = []
 
-
     def add_animal(self, species, name):
         if species == "mammal":
             self.mammals.append(name)
